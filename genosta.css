@@ -1,0 +1,242 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+    color: #333;
+    line-height: 1.8;
+    font-size: 16px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+h1, h2, h3 {
+    color: #333;
+}
+a {
+    text-decoration: none;
+    color: #5f013b;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #941a4d;
+}
+
+/* Header */
+.header {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    border-bottom: 1px solid #eaeaea;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: opacity 0.3s ease; /* Add transition for fade effect */
+}
+.header.hidden {
+    opacity: 0; /* Hide the header */
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.nav {
+    display: flex;
+    gap: 20px;
+}
+.nav a {
+    font-weight: 500;
+    color: #333;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav a:hover {
+    background-color: #5f013b;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Home Section */
+.home-section {
+    text-align: center;
+    padding: 150px 20px;
+    background-color: #ffffff;
+}
+.home-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #222;
+}
+.home-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+.cta-button {
+    background-color: #5f013b;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #5f013b;
+}
+
+/* About Section */
+.about-section {
+    padding: 100px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    line-height: 1.8;
+}
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+.about-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Services Section */
+.services-section {
+    padding: 120px 0;
+    background-color: #ffffff;
+}
+
+.services-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    font-weight: 700;
+    color: #5f013b;
+}
+
+.service {
+    text-align: left; /* Align text to the left */
+    padding: 30px;
+    margin: 20px auto; /* Center the service cards */
+    background-color: #f0f9ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333;
+    max-width: 600px; /* Set a max width for better appearance */
+}
+
+.service h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #5f013b;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styling for Services Section */
+@media (min-width: 768px) {
+    .services-section .container {
+        display: flex;
+        flex-direction: column; /* Stack services vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .service {
+        width: 100%; /* Take full width */
+        margin: 10px 0; /* Adjust margin */
+    }
+}
+
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 100px 0;
+    background-color: #f4f4f4;
+}
+.portfolio-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+.portfolio-item {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+.contact-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form button {
+    padding: 15px;
+    background-color: #5f013b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.contact-form button:hover {
+    background-color: #941a4d;
+}
+
+/* Footer */
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer p {
+    color: #777;
+}
